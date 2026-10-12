@@ -1,0 +1,620 @@
+@charset "utf-8";
+
+/* =========================
+   색상 변수 (코트 아이보리 + 블랙 + 농구공 오렌지)
+========================= */
+:root {
+    --bg: #f5f2ec;          /* 배경 - 코트 바닥 느낌 아이보리 */
+    --paper: #fffdf8;       /* 카드 */
+    --ink: #111111;         /* 기본 글씨·굵은 선 */
+    --sub: #6b665e;         /* 보조 글씨 */
+    --line: #ddd6c9;        /* 연한 구분선 */
+    --orange: #e8590c;      /* 포인트 - 농구공 오렌지 */
+    --orange-d: #c94a06;    /* 오렌지 hover */
+    --navy: #1d3557;        /* 보조 포인트 */
+}
+
+/* =========================
+   reset
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    font: inherit;
+    color: inherit;
+}
+
+/* =========================
+   layout
+========================= */
+body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Pretendard", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+}
+
+.wrap {
+    position: relative;
+}
+
+.inner {
+    width: 1200px;
+    margin: auto;
+}
+
+/* 영문 굵은 라벨 */
+.label {
+    font-family: "Anton", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    color: var(--orange);
+    margin-bottom: 6px;
+}
+
+/* 기본 버튼 */
+.btn {
+    display: inline-block;
+    padding: 0 26px;
+    border: 2px solid var(--ink);
+    background: var(--ink);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 44px;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.btn:hover {
+    border-color: var(--orange);
+    background: var(--orange);
+}
+
+/* =========================
+   header
+========================= */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    border-bottom: 2px solid var(--ink);
+}
+
+#header h1 a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#header h1 .ball {
+    width: 34px;
+    height: 34px;
+}
+
+#header h1 .logo {
+    font-family: "Anton", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+#header h1 em {
+    padding-left: 12px;
+    border-left: 1px solid var(--line);
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--sub);
+}
+
+#nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+#nav a {
+    position: relative;
+    display: block;
+    line-height: 82px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 4px;
+    background: var(--orange);
+    transform: scaleX(0);
+    transition: transform 0.25s;
+}
+
+#nav a:hover::after,
+#nav a.on::after {
+    transform: scaleX(1);
+}
+
+#nav a.on {
+    color: var(--orange);
+}
+
+/* =========================
+   slide (왼쪽 검정 글 상자 + 오른쪽 사진)
+========================= */
+.slide {
+    position: relative;
+    height: 460px;
+    margin-top: 32px;
+    overflow: hidden;
+}
+
+.slide ul {
+    display: flex;
+    width: 3600px;
+    height: 100%;
+}
+
+.slide ul li {
+    display: flex;
+    width: 1200px;
+    height: 100%;
+}
+
+.slide .txt {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 470px;
+    padding: 0 56px 40px;
+    background: var(--ink);
+    color: #fff;
+}
+
+.slide h2 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.28;
+    letter-spacing: -0.03em;
+}
+
+.slide .desc {
+    margin-top: 16px;
+    color: #bdb7ac;
+}
+
+.slide .btn {
+    align-self: flex-start;
+    margin-top: 32px;
+    border-color: var(--orange);
+    background: var(--orange);
+}
+
+.slide .btn:hover {
+    border-color: #fff;
+    background: #fff;
+    color: var(--ink);
+}
+
+.slide .pic {
+    position: relative;
+    flex: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.slide .s1 .pic {
+    background-image: url(https://images.unsplash.com/photo-1559692048-79a3f837883d?w=1400&q=80);
+    background-position: center 55%;
+}
+
+.slide .s2 .pic {
+    background: var(--orange);
+}
+
+.slide .s3 .pic {
+    background-image: url(https://images.unsplash.com/photo-1628779238951-be2c9f2a59f4?w=1400&q=80);
+    background-position: center 46%;
+}
+
+/* 2번 슬라이드 - 코트 라인 + 농구화 그림 */
+.slide .court-lines {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide .shoe-art {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 520px;
+    transform: translate(-50%, -50%) rotate(-8deg);
+}
+
+/* 슬라이드 번호 */
+.pager {
+    position: absolute;
+    left: 56px;
+    bottom: 44px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #fff;
+}
+
+.pager .num {
+    font-family: "Anton", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    color: #8a847a;
+}
+
+.pager .num b {
+    font-weight: 400;
+    color: #fff;
+}
+
+.pager ol {
+    display: flex;
+    gap: 6px;
+}
+
+.pager li {
+    width: 24px;
+    height: 3px;
+    background: #3a3a3a;
+    transition: background 0.3s;
+}
+
+.pager li.on {
+    background: var(--orange);
+}
+
+/* =========================
+   contents (탭 / 배너 / 바로가기)
+========================= */
+.contents {
+    display: flex;
+    gap: 32px;
+    margin: 64px 0 80px;
+}
+
+.contents article {
+    flex: 1;
+}
+
+.contents h2 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 30px;
+}
+
+/* 탭 */
+.tab {
+    position: relative;
+    height: 302px;
+}
+
+.tabmenu {
+    display: flex;
+    gap: 22px;
+}
+
+.tabmenu > li > h2 > a {
+    color: #b3ac9f;
+    transition: color 0.2s;
+}
+
+.tabmenu > li > h2 > a:hover {
+    color: var(--ink);
+}
+
+.tabmenu > li.on > h2 > a {
+    color: var(--ink);
+    background: linear-gradient(transparent 62%, rgba(232, 89, 12, 0.28) 62%);
+}
+
+.tabcon {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+}
+
+.tabcon ul {
+    border-top: 2px solid var(--ink);
+}
+
+.tabcon ul li {
+    border-bottom: 1px solid var(--line);
+}
+
+.tabcon ul li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 56px;
+}
+
+.tabcon p {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.2s;
+}
+
+.tabcon ul li a:hover p {
+    color: var(--orange);
+}
+
+.notice .tag {
+    flex: none;
+    width: 56px;
+    background: var(--ink);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+}
+
+.notice .tag.event {
+    background: var(--orange);
+}
+
+.notice .date {
+    font-size: 13px;
+    color: var(--sub);
+}
+
+.tips .num {
+    flex: none;
+    width: 28px;
+    font-family: "Anton", sans-serif;
+    font-size: 18px;
+    color: var(--orange);
+}
+
+.tips {
+    display: none;
+}
+
+/* 배너 */
+.banner > a {
+    position: relative;
+    display: block;
+    height: 230px;
+    margin-top: 16px;
+    padding: 26px;
+    background: var(--orange);
+    color: #fff;
+    overflow: hidden;
+    transition: background 0.2s;
+}
+
+.banner > a:hover {
+    background: var(--orange-d);
+}
+
+.banner .label {
+    color: var(--ink);
+}
+
+.banner h3 {
+    position: relative;
+    z-index: 1;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.3;
+    letter-spacing: -0.03em;
+}
+
+.banner .more {
+    position: absolute;
+    left: 26px;
+    bottom: 22px;
+    z-index: 1;
+    font-size: 14px;
+    font-weight: 800;
+    border-bottom: 2px solid #fff;
+}
+
+.banner .shoe-art {
+    position: absolute;
+    right: -34px;
+    bottom: 6px;
+    width: 250px;
+    transform: rotate(-10deg);
+    transition: transform 0.3s;
+}
+
+.banner > a:hover .shoe-art {
+    transform: rotate(-14deg) translateY(-6px);
+}
+
+/* 바로가기 */
+.go ul {
+    margin-top: 16px;
+    border-top: 2px solid var(--ink);
+}
+
+.go ul li {
+    border-bottom: 1px solid var(--line);
+}
+
+.go ul li a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    height: 75px;
+    padding: 0 8px;
+    transition: background 0.2s;
+}
+
+.go ul li a::after {
+    content: "→";
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.go ul li a:hover {
+    background: var(--paper);
+}
+
+.go ul li a:hover::after {
+    color: var(--orange);
+    transform: translateX(4px);
+}
+
+.go .num {
+    font-family: "Anton", sans-serif;
+    font-size: 28px;
+    color: var(--orange);
+}
+
+.go strong {
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 22px;
+}
+
+.go span {
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--sub);
+}
+
+/* =========================
+   footer
+========================= */
+#footer {
+    display: flex;
+    gap: 56px;
+    padding: 36px 0 56px;
+    border-top: 2px solid var(--ink);
+    font-size: 13px;
+}
+
+#footer .flogo {
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+}
+
+.fmenu {
+    display: flex;
+    gap: 22px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.fmenu a:hover {
+    color: var(--orange);
+}
+
+.fcopy,
+.credit {
+    color: var(--sub);
+}
+
+/* =========================
+   popup (공통)
+========================= */
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background: rgba(17, 17, 17, 0.6);
+}
+
+.popcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 560px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border: 2px solid var(--ink);
+    background: var(--paper);
+    transform: translate(-50%, -50%);
+}
+
+.popcon .img img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.popcon .text {
+    padding: 28px 32px 32px;
+}
+
+.popcon .text h2 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.35;
+    letter-spacing: -0.02em;
+}
+
+.popcon .desc {
+    margin-top: 12px;
+    color: #333;
+}
+
+.popcon .close button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 1;
+    width: 36px;
+    height: 36px;
+    background: var(--ink);
+    color: #fff;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+
+.popcon .close button:hover {
+    background: var(--orange);
+}

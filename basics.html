@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>농구 기초 | 루키 코트 ROOKIE COURT</title>
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="js/jquery-1.12.3.js" defer></script>
+    <script src="js/basics.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="inner">
+            <header id="header">
+                <h1>
+                    <a href="index.html">
+                        <svg class="ball" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="#e8590c" stroke="#111" stroke-width="2.5"/><path d="M2 17h30M17 2v30M7 6.5c5.5 5.5 5.5 15.5 0 21M27 6.5c-5.5 5.5-5.5 15.5 0 21" fill="none" stroke="#111" stroke-width="2"/></svg>
+                        <span class="logo">ROOKIE COURT</span>
+                        <em>루키 코트</em>
+                    </a>
+                </h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="basics.html" class="on">농구 기초</a></li>
+                        <li><a href="skills.html">기술 배우기</a></li>
+                        <li><a href="shoes.html">농구화 추천</a></li>
+                        <li><a href="routine.html">연습 루틴</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="sub-visual basics">
+                <div class="txt">
+                    <span class="big">BASICS</span>
+                    <p class="label">PAGE 01</p>
+                    <h2>농구 기초</h2>
+                    <p class="desc">규칙, 포지션, 용어까지. 코트에 서기 전에 알아두면 좋은 것들.</p>
+                </div>
+                <div class="pic"></div>
+            </section>
+
+            <section class="sec" id="rules">
+                <div class="sec-head">
+                    <p class="label">RULES</p>
+                    <h3>꼭 알아야 할 규칙 5가지</h3>
+                    <p class="sec-desc">국제농구연맹(FIBA)·KBL 기준이에요. NBA와 다른 부분은 따로 적었어요.</p>
+                </div>
+                <ul class="acc">
+                    <li class="on">
+                        <button class="acc-head"><span class="num">01</span><strong>경기 방식</strong><em>5 대 5 · 4쿼터</em><i></i></button>
+                        <div class="acc-body">
+                            <p>한 팀 5명씩 코트에 들어가서 상대 림에 공을 넣는 경기예요. 더 많이 넣은 팀이 이겨요.</p>
+                            <ul class="dots">
+                                <li><b>경기 시간</b> 10분씩 4쿼터 (NBA는 12분씩)</li>
+                                <li><b>동점이면</b> 5분 연장전을 승부가 날 때까지</li>
+                                <li><b>선수 교체</b> 공이 죽었을 때(경기가 멈췄을 때) 횟수 제한 없이</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="acc-head"><span class="num">02</span><strong>득점</strong><em>1점 · 2점 · 3점</em><i></i></button>
+                        <div class="acc-body">
+                            <p>어디서 던졌는지에 따라 점수가 달라요.</p>
+                            <ul class="dots">
+                                <li><b>3점</b> 3점 라인(큰 반원) 바깥에서 넣은 슛</li>
+                                <li><b>2점</b> 3점 라인 안쪽에서 넣은 슛</li>
+                                <li><b>1점</b> 파울을 당해서 얻은 자유투 한 개</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="acc-head"><span class="num">03</span><strong>파울</strong><em>몸으로 하는 반칙</em><i></i></button>
+                        <div class="acc-body">
+                            <p>상대를 밀거나, 잡거나, 치는 등 몸 접촉으로 생기는 반칙이에요.</p>
+                            <ul class="dots">
+                                <li><b>개인 파울</b> 한 선수가 5번 하면 퇴장 (NBA는 6번)</li>
+                                <li><b>슛 동작 중 파울</b> 슛이 안 들어가면 자유투 2~3개, 들어가면 득점 인정 + 자유투 1개(앤드원)</li>
+                                <li><b>팀 파울</b> 한 쿼터에 팀 전체 파울이 5번째가 되는 순간부터 상대에게 자유투</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="acc-head"><span class="num">04</span><strong>바이얼레이션</strong><em>공을 다루는 규칙 위반</em><i></i></button>
+                        <div class="acc-body">
+                            <p>몸 접촉 없이 규칙을 어긴 경우예요. 공격권이 상대에게 넘어가요.</p>
+                            <ul class="dots">
+                                <li><b>트래블링</b> 드리블 없이 공을 들고 세 걸음 이상 걷기</li>
+                                <li><b>더블 드리블</b> 드리블을 멈췄다가 다시 시작하거나, 두 손으로 동시에 드리블</li>
+                                <li><b>3초 룰</b> 공격 팀 선수가 상대 페인트존(골대 앞 직사각형)에 3초 넘게 머물기</li>
+                                <li><b>24초 룰</b> 공격권을 잡고 24초 안에 슛을 쏴서 림에 맞히지 못함</li>
+                                <li><b>8초 룰</b> 우리 진영에서 8초 안에 공을 하프라인 너머로 넘기지 못함</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="acc-head"><span class="num">05</span><strong>3x3 농구</strong><em>친구들과 하기 좋은 길거리 농구</em><i></i></button>
+                        <div class="acc-body">
+                            <p>골대 하나로 3명씩 하는 경기예요. 사람이 적어도 할 수 있어서 초보자 연습에 딱이에요.</p>
+                            <ul class="dots">
+                                <li><b>점수</b> 아크(반원) 안 1점, 바깥 2점</li>
+                                <li><b>끝나는 조건</b> 10분이 지나거나 먼저 21점을 넣으면 끝</li>
+                                <li><b>공격 시간</b> 12초 안에 슛</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="sec" id="positions">
+                <div class="sec-head">
+                    <p class="label">POSITIONS</p>
+                    <h3>코트 위의 5개 포지션</h3>
+                    <p class="sec-desc">마우스를 올리면 코트에서 어디에 서는지 보여요. 누르면 자세한 설명이 열려요.</p>
+                </div>
+                <div class="pos-wrap">
+                    <div class="court">
+                        <svg viewBox="0 0 460 420" aria-label="하프코트 포지션 그림">
+                            <rect x="2" y="2" width="456" height="416" fill="#ead2ab" stroke="#111" stroke-width="3"/>
+                            <rect x="170" y="2" width="120" height="190" fill="#e8590c"/>
+                            <g fill="none" stroke="#fff" stroke-width="3">
+                                <rect x="170" y="2" width="120" height="190"/>
+                                <circle cx="230" cy="192" r="60"/>
+                                <path d="M40 2 V110 A196 196 0 0 0 420 110 V2"/>
+                                <path d="M150 418 A80 80 0 0 1 310 418"/>
+                            </g>
+                            <line x1="200" y1="36" x2="260" y2="36" stroke="#111" stroke-width="4"/>
+                            <circle cx="230" cy="52" r="11" fill="none" stroke="#111" stroke-width="3"/>
+                            <g class="spot" data-n="1" transform="translate(230 340)"><circle r="21" stroke="#111" stroke-width="3"/><text y="7">1</text></g>
+                            <g class="spot" data-n="2" transform="translate(392 238)"><circle r="21" stroke="#111" stroke-width="3"/><text y="7">2</text></g>
+                            <g class="spot" data-n="3" transform="translate(68 238)"><circle r="21" stroke="#111" stroke-width="3"/><text y="7">3</text></g>
+                            <g class="spot" data-n="4" transform="translate(318 168)"><circle r="21" stroke="#111" stroke-width="3"/><text y="7">4</text></g>
+                            <g class="spot" data-n="5" transform="translate(148 104)"><circle r="21" stroke="#111" stroke-width="3"/><text y="7">5</text></g>
+                        </svg>
+                    </div>
+                    <ul class="pos-list">
+                        <li data-n="1"><a href="#"><span class="no">1</span><div><strong>포인트 가드<em>PG</em></strong><p>공을 운반하고 공격을 지휘하는 사령관</p></div></a></li>
+                        <li data-n="2"><a href="#"><span class="no">2</span><div><strong>슈팅 가드<em>SG</em></strong><p>외곽슛으로 점수를 만드는 득점원</p></div></a></li>
+                        <li data-n="3"><a href="#"><span class="no">3</span><div><strong>스몰 포워드<em>SF</em></strong><p>공격·수비를 모두 하는 만능형</p></div></a></li>
+                        <li data-n="4"><a href="#"><span class="no">4</span><div><strong>파워 포워드<em>PF</em></strong><p>골밑 몸싸움과 리바운드 담당</p></div></a></li>
+                        <li data-n="5"><a href="#"><span class="no">5</span><div><strong>센터<em>C</em></strong><p>골밑을 지키는 팀의 기둥</p></div></a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="sec" id="terms">
+                <div class="sec-head">
+                    <p class="label">GLOSSARY</p>
+                    <h3>농구 용어 사전</h3>
+                    <p class="sec-desc">경기 보다가 모르는 말이 나오면 검색해 보세요.</p>
+                </div>
+                <div class="toolbar">
+                    <div class="chips term-cat">
+                        <button class="on" data-cat="all">전체</button>
+                        <button data-cat="공격">공격</button>
+                        <button data-cat="수비">수비</button>
+                        <button data-cat="규칙">규칙</button>
+                    </div>
+                    <div class="search">
+                        <input type="text" id="term-search" placeholder="용어나 뜻으로 검색">
+                    </div>
+                </div>
+                <ul class="terms"></ul>
+                <p class="empty">찾는 용어가 없어요. 다른 단어로 검색해 보세요.</p>
+            </section>
+
+            <footer id="footer">
+                <p class="flogo">ROOKIE COURT</p>
+                <div>
+                    <ul class="fmenu">
+                        <li><a href="#">사이트 소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                    <p class="fcopy">COPYRIGHT &copy; 2026 ROOKIE COURT. All Rights Reserved.</p>
+                    <p class="credit">사진: Unsplash · 농구화 가격과 특징은 학습용 참고 정보입니다.</p>
+                </div>
+            </footer>
+        </div>
+        <div id="popup" class="popup">
+            <div class="popcon">
+                <div class="text">
+                    <p class="label"></p>
+                    <h2></h2>
+                    <div class="desc"></div>
+                </div>
+                <div class="close">
+                    <button>✕</button>
+                </div>
+            </div>
+        </div>
+    </div><!--//wrap-->
+</body>
+</html>

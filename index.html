@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>루키 코트 ROOKIE COURT</title>
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.3.js" defer></script>
+    <script src="js/shoes-data.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="inner">
+            <header id="header">
+                <h1>
+                    <a href="index.html">
+                        <svg class="ball" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="#e8590c" stroke="#111" stroke-width="2.5"/><path d="M2 17h30M17 2v30M7 6.5c5.5 5.5 5.5 15.5 0 21M27 6.5c-5.5 5.5-5.5 15.5 0 21" fill="none" stroke="#111" stroke-width="2"/></svg>
+                        <span class="logo">ROOKIE COURT</span>
+                        <em>루키 코트</em>
+                    </a>
+                </h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="basics.html">농구 기초</a></li>
+                        <li><a href="skills.html">기술 배우기</a></li>
+                        <li><a href="shoes.html">농구화 추천</a></li>
+                        <li><a href="routine.html">연습 루틴</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="slide" class="slide">
+                <ul>
+                    <li class="s1">
+                        <div class="txt">
+                            <p class="label">BASICS</p>
+                            <h2>오늘 처음 공을 잡아도<br>괜찮아요</h2>
+                            <p class="desc">규칙, 포지션, 용어까지 초보자 눈높이로 정리했어요.</p>
+                            <a href="basics.html" class="btn">농구 기초 보기</a>
+                        </div>
+                        <div class="pic"></div>
+                    </li>
+                    <li class="s2">
+                        <div class="txt">
+                            <p class="label">SHOE FINDER</p>
+                            <h2>내 발에 맞는 첫 농구화,<br>질문 4개면 끝</h2>
+                            <p class="desc">포지션·스타일·발볼·예산으로 딱 맞는 모델을 골라드려요.</p>
+                            <a href="shoes.html" class="btn">농구화 추천받기</a>
+                        </div>
+                        <div class="pic">
+                            <svg class="court-lines" viewBox="0 0 730 460" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                                <g fill="none" stroke="#fff" stroke-width="3" opacity="0.35">
+                                    <line x1="365" y1="0" x2="365" y2="460"/>
+                                    <circle cx="365" cy="230" r="92"/>
+                                    <circle cx="365" cy="230" r="30"/>
+                                    <path d="M0 40 H110 A210 210 0 0 1 110 420 H0"/>
+                                    <path d="M730 40 H620 A210 210 0 0 0 620 420 H730"/>
+                                </g>
+                            </svg>
+                            <div class="shoe-art" data-colors="#111111,#ffffff,#ffffff,#111111"></div>
+                        </div>
+                    </li>
+                    <li class="s3">
+                        <div class="txt">
+                            <p class="label">ROUTINE</p>
+                            <h2>하루 20분,<br>일주일이면 달라져요</h2>
+                            <p class="desc">레벨에 맞는 주간 연습 계획을 체크리스트로 따라 해보세요.</p>
+                            <a href="routine.html" class="btn">연습 루틴 시작</a>
+                        </div>
+                        <div class="pic"></div>
+                    </li>
+                </ul>
+                <div class="pager">
+                    <p class="num"><b>01</b> / 03</p>
+                    <ol>
+                        <li class="on"></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+            </section>
+            <div class="contents">
+                <article class="tab">
+                    <p class="label">NEWS</p>
+                    <ul class="tabmenu">
+                        <li class="on">
+                            <h2><a href="#">공지사항</a></h2>
+                            <div class="notice tabcon">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="pop"
+                                            data-label="공지 · 2026.10.10"
+                                            data-title="루키 코트 오픈! 농구 입문 가이드 공개"
+                                            data-img="https://images.unsplash.com/photo-1494199505258-5f95387f933c?w=1000&q=80"
+                                            data-text="규칙, 포지션, 기술, 농구화, 연습 루틴까지 초보자에게 필요한 내용을 한곳에 모았어요.<br>처음이라면 '농구 기초'부터 차근차근 보세요.">
+                                            <span class="tag">공지</span>
+                                            <p>루키 코트 오픈! 농구 입문 가이드 공개</p>
+                                            <span class="date">10.10</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pop"
+                                            data-label="업데이트 · 2026.10.08"
+                                            data-title="농구화 추천 테스트에 16개 모델 등록"
+                                            data-img=""
+                                            data-text="질문 4개에 답하면 포지션·플레이 스타일·발볼·예산에 맞는 농구화 TOP 3를 추천해 드려요.<br>두 모델을 골라 나란히 비교할 수도 있어요.">
+                                            <span class="tag">업데이트</span>
+                                            <p>농구화 추천 테스트에 16개 모델 등록</p>
+                                            <span class="date">10.08</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pop"
+                                            data-label="이벤트 · 2026.10.01"
+                                            data-title="연습 루틴 7일 완주 챌린지"
+                                            data-img="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=1000&q=80"
+                                            data-text="연습 루틴 페이지에서 일주일 체크리스트를 모두 채워보세요.<br>실력은 한 번에 오래보다, 짧게 자주 할 때 늘어요.">
+                                            <span class="tag event">이벤트</span>
+                                            <p>연습 루틴 7일 완주 챌린지</p>
+                                            <span class="date">10.01</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pop"
+                                            data-label="공지 · 2026.09.25"
+                                            data-title="겨울철 실외 코트, 이것만은 꼭"
+                                            data-img="https://images.unsplash.com/photo-1519861531473-9200262188bf?w=1000&q=80"
+                                            data-text="추운 날엔 몸이 굳어서 다치기 쉬워요. 워밍업을 평소보다 두 배로 하고,<br>젖거나 얼어 있는 코트는 미끄러우니 피하세요.">
+                                            <span class="tag">공지</span>
+                                            <p>겨울철 실외 코트, 이것만은 꼭</p>
+                                            <span class="date">09.25</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <h2><a href="#">오늘의 팁</a></h2>
+                            <div class="tips tabcon">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="pop"
+                                            data-label="TIP 01 · 드리블"
+                                            data-title="드리블할 땐 공 말고 앞을 보세요"
+                                            data-img=""
+                                            data-text="공을 보면 동료도, 수비도 안 보여요.<br>처음엔 어색해도 시선을 정면에 두고 드리블하는 연습부터 하세요.">
+                                            <span class="num">01</span>
+                                            <p>드리블할 땐 공 말고 앞을 보세요</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pop"
+                                            data-label="TIP 02 · 슛"
+                                            data-title="레이업은 '오른발 → 왼발 → 슛' 리듬"
+                                            data-img=""
+                                            data-text="오른쪽에서 할 땐 오른발, 왼발 두 걸음 뒤 왼발로 뛰어 오른손으로 올려놓아요.<br>왼쪽에서는 발과 손을 반대로 하면 돼요.">
+                                            <span class="num">02</span>
+                                            <p>레이업은 '오른발 → 왼발 → 슛' 리듬</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pop"
+                                            data-label="TIP 03 · 슛"
+                                            data-title="슛은 손목 스냅으로 마무리"
+                                            data-img=""
+                                            data-text="공을 놓은 뒤에도 손목을 꺾은 자세로 잠깐 멈춰보세요.<br>공에 역회전이 걸려서 림에 맞아도 부드럽게 들어가요.">
+                                            <span class="num">03</span>
+                                            <p>슛은 손목 스냅으로 마무리</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pop"
+                                            data-label="TIP 04 · 수비"
+                                            data-title="수비할 땐 발을 교차하지 마세요"
+                                            data-img=""
+                                            data-text="옆으로 움직일 때는 슬라이드 스텝!<br>발을 교차하면 상대가 방향을 바꿀 때 따라가지 못해요.">
+                                            <span class="num">04</span>
+                                            <p>수비할 땐 발을 교차하지 마세요</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+                <article class="banner">
+                    <p class="label">SHOE FINDER</p>
+                    <h2>농구화 추천</h2>
+                    <a href="shoes.html#test">
+                        <h3>질문 4개로 찾는<br>내 첫 농구화</h3>
+                        <p class="more">테스트 시작하기</p>
+                        <div class="shoe-art" data-colors="#fffdf8,#111111,#ffffff,#111111"></div>
+                    </a>
+                </article>
+                <article class="go">
+                    <p class="label">QUICK MENU</p>
+                    <h2>바로가기</h2>
+                    <ul>
+                        <li>
+                            <a href="basics.html">
+                                <span class="num">01</span>
+                                <div>
+                                    <strong>규칙 한눈에</strong>
+                                    <span>득점 · 파울 · 바이얼레이션</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="skills.html">
+                                <span class="num">02</span>
+                                <div>
+                                    <strong>드리블 기초</strong>
+                                    <span>제자리 드리블부터 차근차근</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="routine.html">
+                                <span class="num">03</span>
+                                <div>
+                                    <strong>이번 주 연습 루틴</strong>
+                                    <span>하루 20분 체크리스트</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+            <footer id="footer">
+                <p class="flogo">ROOKIE COURT</p>
+                <div>
+                    <ul class="fmenu">
+                        <li><a href="#">사이트 소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                    <p class="fcopy">COPYRIGHT &copy; 2026 ROOKIE COURT. All Rights Reserved.</p>
+                    <p class="credit">사진: Unsplash · 농구화 가격과 특징은 학습용 참고 정보입니다.</p>
+                </div>
+            </footer>
+        </div>
+        <div id="popup" class="popup">
+            <div class="popcon">
+                <p class="img">
+                    <img src="" alt="">
+                </p>
+                <div class="text">
+                    <p class="label"></p>
+                    <h2></h2>
+                    <p class="desc"></p>
+                </div>
+                <div class="close">
+                    <button>✕</button>
+                </div>
+            </div>
+        </div>
+    </div><!--//wrap-->
+</body>
+</html>

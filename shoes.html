@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>농구화 추천 | 루키 코트 ROOKIE COURT</title>
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="js/jquery-1.12.3.js" defer></script>
+    <script src="js/shoes-data.js" defer></script>
+    <script src="js/shoes.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="inner">
+            <header id="header">
+                <h1>
+                    <a href="index.html">
+                        <svg class="ball" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="#e8590c" stroke="#111" stroke-width="2.5"/><path d="M2 17h30M17 2v30M7 6.5c5.5 5.5 5.5 15.5 0 21M27 6.5c-5.5 5.5-5.5 15.5 0 21" fill="none" stroke="#111" stroke-width="2"/></svg>
+                        <span class="logo">ROOKIE COURT</span>
+                        <em>루키 코트</em>
+                    </a>
+                </h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="basics.html">농구 기초</a></li>
+                        <li><a href="skills.html">기술 배우기</a></li>
+                        <li><a href="shoes.html" class="on">농구화 추천</a></li>
+                        <li><a href="routine.html">연습 루틴</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="sub-visual shoes">
+                <div class="txt">
+                    <span class="big">SHOES</span>
+                    <p class="label">PAGE 03</p>
+                    <h2>농구화 추천</h2>
+                    <p class="desc">질문 4개로 추천받고, 마음에 드는 두 켤레는 나란히 비교해 보세요.</p>
+                </div>
+                <div class="pic"></div>
+            </section>
+
+            <section class="finder" id="test">
+                <div class="finder-head">
+                    <div>
+                        <p class="label">SHOE FINDER</p>
+                        <h3>질문 4개로 찾는 내 첫 농구화</h3>
+                    </div>
+                    <div class="progress">
+                        <span class="step">Q1 / 4</span>
+                        <div class="bar"><i></i></div>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4></h4>
+                    <ul class="options"></ul>
+                    <button class="prev">← 이전 질문</button>
+                </div>
+                <div class="result">
+                    <div class="result-head">
+                        <h4>이 농구화들을 추천해요</h4>
+                        <button class="retry">다시 하기</button>
+                    </div>
+                    <ol class="result-list"></ol>
+                </div>
+            </section>
+
+            <section class="sec" id="list">
+                <div class="sec-head">
+                    <p class="label">ALL SHOES</p>
+                    <h3>농구화 모아보기</h3>
+                    <p class="sec-desc">조건으로 걸러보고, 카드의 '+ 비교'를 눌러 두 켤레를 비교해 보세요.</p>
+                </div>
+                <div class="shoe-filter">
+                    <div class="group">
+                        <span>포지션</span>
+                        <div class="chips f-pos">
+                            <button class="on" data-v="all">전체</button>
+                            <button data-v="guard">가드</button>
+                            <button data-v="forward">포워드</button>
+                            <button data-v="center">센터</button>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <span>예산</span>
+                        <div class="chips f-price">
+                            <button class="on" data-v="all">전체</button>
+                            <button data-v="low">15만 원 이하</button>
+                            <button data-v="mid">15~20만 원</button>
+                            <button data-v="high">20만 원 이상</button>
+                        </div>
+                    </div>
+                    <label class="wide-check"><input type="checkbox" id="wide"> 발볼이 넓어요</label>
+                    <select id="sort">
+                        <option value="basic">기본순</option>
+                        <option value="low">낮은 가격순</option>
+                        <option value="high">높은 가격순</option>
+                    </select>
+                </div>
+                <p class="count list-info"><b>0</b>켤레</p>
+                <ul class="shoe-list"></ul>
+                <p class="empty">조건에 맞는 농구화가 없어요. 조건을 조금 넓혀보세요.</p>
+                <p class="note">※ 가격과 특징은 학습용 참고 정보예요. 실제 판매가와 사양은 구매 전에 꼭 확인하세요.</p>
+            </section>
+
+            <footer id="footer">
+                <p class="flogo">ROOKIE COURT</p>
+                <div>
+                    <ul class="fmenu">
+                        <li><a href="#">사이트 소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                    <p class="fcopy">COPYRIGHT &copy; 2026 ROOKIE COURT. All Rights Reserved.</p>
+                    <p class="credit">사진: Unsplash · 농구화 가격과 특징은 학습용 참고 정보입니다.</p>
+                </div>
+            </footer>
+        </div>
+
+        <div class="compare-bar">
+            <p><b>COMPARE</b><span class="names">비교할 농구화를 2켤레 골라주세요</span></p>
+            <button class="clear">비우기</button>
+            <button class="btn go-compare" disabled>비교하기</button>
+        </div>
+
+        <div id="popup" class="popup">
+            <div class="popcon compare-pop">
+                <div class="text">
+                    <p class="label">COMPARE</p>
+                    <h2>농구화 비교</h2>
+                    <table class="cmp-table"></table>
+                </div>
+                <div class="close">
+                    <button>✕</button>
+                </div>
+            </div>
+        </div>
+    </div><!--//wrap-->
+</body>
+</html>

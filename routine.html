@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습 루틴 | 루키 코트 ROOKIE COURT</title>
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="js/jquery-1.12.3.js" defer></script>
+    <script src="js/routine.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="inner">
+            <header id="header">
+                <h1>
+                    <a href="index.html">
+                        <svg class="ball" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="#e8590c" stroke="#111" stroke-width="2.5"/><path d="M2 17h30M17 2v30M7 6.5c5.5 5.5 5.5 15.5 0 21M27 6.5c-5.5 5.5-5.5 15.5 0 21" fill="none" stroke="#111" stroke-width="2"/></svg>
+                        <span class="logo">ROOKIE COURT</span>
+                        <em>루키 코트</em>
+                    </a>
+                </h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="basics.html">농구 기초</a></li>
+                        <li><a href="skills.html">기술 배우기</a></li>
+                        <li><a href="shoes.html">농구화 추천</a></li>
+                        <li><a href="routine.html" class="on">연습 루틴</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="sub-visual routine">
+                <div class="txt">
+                    <span class="big">ROUTINE</span>
+                    <p class="label">PAGE 04</p>
+                    <h2>연습 루틴</h2>
+                    <p class="desc">레벨을 고르고, 끝낸 연습은 체크! 새로고침해도 기록이 남아요.</p>
+                </div>
+                <div class="pic"></div>
+            </section>
+
+            <div class="routine-top">
+                <div class="chips level">
+                    <button class="on" data-lv="beginner">입문 · 주 3회</button>
+                    <button data-lv="novice">초급 · 주 4회</button>
+                </div>
+                <div class="progress-box">
+                    <strong class="pct">0%</strong>
+                    <div>
+                        <p>이번 주 <b class="done">0</b> / <span class="total">0</span> 완료</p>
+                        <div class="bar"><i></i></div>
+                    </div>
+                    <button class="reset">기록 초기화</button>
+                </div>
+            </div>
+            <ul class="week"></ul>
+
+            <section class="sec">
+                <div class="sec-head">
+                    <p class="label">REMEMBER</p>
+                    <h3>연습 전에 꼭 기억하기</h3>
+                </div>
+                <ul class="tips3">
+                    <li><b>워밍업 5분은 필수</b><p>가볍게 뛰고 발목·무릎·손목을 돌려주세요. 다치면 연습도 못 해요.</p></li>
+                    <li><b>물은 15분마다 한 모금</b><p>목마르다고 느끼기 전에 마시는 게 좋아요.</p></li>
+                    <li><b>아프면 바로 쉬기</b><p>통증이 있는데 참고 하면 오래 쉬게 돼요. 무리하지 마세요.</p></li>
+                </ul>
+            </section>
+
+            <footer id="footer">
+                <p class="flogo">ROOKIE COURT</p>
+                <div>
+                    <ul class="fmenu">
+                        <li><a href="#">사이트 소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                    <p class="fcopy">COPYRIGHT &copy; 2026 ROOKIE COURT. All Rights Reserved.</p>
+                    <p class="credit">사진: Unsplash · 농구화 가격과 특징은 학습용 참고 정보입니다.</p>
+                </div>
+            </footer>
+        </div>
+    </div><!--//wrap-->
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기술 배우기 | 루키 코트 ROOKIE COURT</title>
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="js/jquery-1.12.3.js" defer></script>
+    <script src="js/skills.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="inner">
+            <header id="header">
+                <h1>
+                    <a href="index.html">
+                        <svg class="ball" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="#e8590c" stroke="#111" stroke-width="2.5"/><path d="M2 17h30M17 2v30M7 6.5c5.5 5.5 5.5 15.5 0 21M27 6.5c-5.5 5.5-5.5 15.5 0 21" fill="none" stroke="#111" stroke-width="2"/></svg>
+                        <span class="logo">ROOKIE COURT</span>
+                        <em>루키 코트</em>
+                    </a>
+                </h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="basics.html">농구 기초</a></li>
+                        <li><a href="skills.html" class="on">기술 배우기</a></li>
+                        <li><a href="shoes.html">농구화 추천</a></li>
+                        <li><a href="routine.html">연습 루틴</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="sub-visual skills">
+                <div class="txt">
+                    <span class="big">SKILLS</span>
+                    <p class="label">PAGE 02</p>
+                    <h2>기술 배우기</h2>
+                    <p class="desc">드리블, 슛, 패스, 수비를 단계별로. 쉬운 것부터 하나씩.</p>
+                </div>
+                <div class="pic"></div>
+            </section>
+
+            <div class="skill-tabs">
+                <button class="on" data-cat="dribble"><span>DRIBBLE</span>드리블</button>
+                <button data-cat="shoot"><span>SHOOT</span>슛</button>
+                <button data-cat="pass"><span>PASS</span>패스</button>
+                <button data-cat="defense"><span>DEFENSE</span>수비</button>
+            </div>
+            <div class="toolbar">
+                <div class="chips level">
+                    <button class="on" data-lv="all">전체</button>
+                    <button data-lv="1">입문</button>
+                    <button data-lv="2">초급</button>
+                    <button data-lv="3">중급</button>
+                </div>
+                <p class="count"><b>0</b>개 기술</p>
+            </div>
+            <ul class="skill-list"></ul>
+            <p class="empty">이 난이도에는 아직 기술이 없어요.</p>
+
+            <footer id="footer">
+                <p class="flogo">ROOKIE COURT</p>
+                <div>
+                    <ul class="fmenu">
+                        <li><a href="#">사이트 소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                    <p class="fcopy">COPYRIGHT &copy; 2026 ROOKIE COURT. All Rights Reserved.</p>
+                    <p class="credit">사진: Unsplash · 농구화 가격과 특징은 학습용 참고 정보입니다.</p>
+                </div>
+            </footer>
+        </div>
+        <div id="popup" class="popup">
+            <div class="popcon video-pop">
+                <div class="video-box"></div>
+                <div class="text">
+                    <p class="label"></p>
+                    <h2></h2>
+                    <p class="desc"></p>
+                    <a href="#" class="yt-link" target="_blank" rel="noopener">유튜브에서 보기 ↗</a>
+                </div>
+                <div class="close">
+                    <button>✕</button>
+                </div>
+            </div>
+        </div>
+    </div><!--//wrap-->
+</body>
+</html>
